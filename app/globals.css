@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palette pulled from the comp */
+  --color-bone: #fbf8f2;
+  --color-cream: #f4efe5;
+  --color-sand: #eae1d2;
+  --color-shell: #e2d7c5;
+  --color-ink: #1a1512;
+  --color-espresso: #241c17;
+  --color-tan: #c0a084;
+  --color-mocha: #8a7969;
+  --color-fog: #6f6259;
+
+  --font-display: var(--font-cormorant), "Times New Roman", serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  --hairline: rgba(26, 21, 18, 0.14);
+  --hairline-light: rgba(244, 239, 229, 0.16);
+  --gutter: clamp(1.25rem, 4vw, 4.5rem);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--color-bone);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  overflow-x: clip;
+}
+
+/* Lenis owns the scroll; keep native smooth-scroll out of the way. */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+::selection {
+  background: var(--color-tan);
+  color: var(--color-bone);
+}
+
+/* ---- Typographic primitives ------------------------------------------- */
+
+.u-eyebrow {
+  font-size: 0.6875rem;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.u-display {
+  font-family: var(--font-display);
+  font-weight: 300;
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+}
+
+.u-body {
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.005em;
+  color: var(--color-fog);
+}
+
+.u-rule {
+  border-top: 1px solid var(--hairline);
+}
+.u-rule-light {
+  border-top: 1px solid var(--hairline-light);
+}
+
+/* Underline that wipes in from the left on hover. */
+.u-link {
+  position: relative;
+  display: inline-block;
+}
+.u-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35em;
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.55s var(--ease-out-expo);
+}
+.u-link:hover::after,
+.u-link[data-active="true"]::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Fill that rises from the bottom on hover. */
+.u-btn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.u-btn > .u-btn-fill {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transform: translateY(101%);
+  transition: transform 0.6s var(--ease-out-expo);
+}
+.u-btn:hover > .u-btn-fill {
+  transform: translateY(0);
+}
+
+/* Images inside a reveal frame lean into a slow zoom on hover. */
+.u-zoom img {
+  transition: transform 1.2s var(--ease-out-expo), filter 1.2s var(--ease-out-expo);
+}
+.u-zoom:hover img {
+  transform: scale(1.06);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
