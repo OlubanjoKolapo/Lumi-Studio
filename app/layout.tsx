@@ -25,7 +25,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Lumi — Healthy Hair. Beautiful Confidence.",
   description:
-    "A braiding and protective-styling studio in Scarborough, Toronto. Knotless braids, cornrows, braided updos, passion twists and locs — book in a WhatsApp message.",
+    "A braiding and protective-styling studio in Ajax, Ontario. Knotless braids, cornrows, braided updos, passion twists and locs — book in a WhatsApp message.",
 };
 
 export default function RootLayout({

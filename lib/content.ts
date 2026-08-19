@@ -46,7 +46,7 @@ export const hero = {
     { text: "Confidence." },
   ],
   body: "Braids, twists and locs installed with tension your edges can live with — and a scalp that still feels like yours in week six.",
-  meta: ["Est. 2014", "Toronto · Ontario"],
+  meta: ["Est. 2014", "Ajax · Ontario"],
   image: "/images/braids-waist-warm.jpg",
 };
 
@@ -271,7 +271,7 @@ export const booking = {
   heading: "Reserve your chair.",
   body: "Tell us what you're after and we'll come back within a day with two or three times that work. New clients, add a note about your last install — it saves us both a step.",
   details: [
-    { label: "Studio", value: "2350 Eglinton Ave E, Scarborough, ON" },
+    { label: "Studio", value: "8 View St, Ajax, ON" },
     { label: "Hours", value: "Tue – Sat, 9:00 – 19:00" },
     { label: "WhatsApp", value: WHATSAPP_DISPLAY },
     { label: "Email", value: "hello@lumi.studio" },
@@ -314,7 +314,7 @@ export const footer = {
   columns: [
     {
       title: "Visit",
-      items: ["2350 Eglinton Ave E", "Scarborough, ON M1K 2M2", "Canada"],
+      items: ["8 View St", "Ajax, ON", "Canada"],
     },
     {
       title: "Hours",
