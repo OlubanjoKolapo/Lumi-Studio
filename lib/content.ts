@@ -1,3 +1,5 @@
+import { WHATSAPP_DISPLAY } from "./whatsapp";
+
 /**
  * All page copy + imagery in one place so the sections stay presentational.
  * Photography lives in `public/images/` — real client work, mostly shot on a
@@ -44,7 +46,7 @@ export const hero = {
     { text: "Confidence." },
   ],
   body: "Braids, twists and locs installed with tension your edges can live with — and a scalp that still feels like yours in week six.",
-  meta: ["Est. 2014", "Lagos · Victoria Island"],
+  meta: ["Est. 2014", "Toronto · Ontario"],
   image: "/images/braids-waist-warm.jpg",
 };
 
@@ -76,7 +78,7 @@ export const services = {
       title: "Knotless Braids",
       duration: "4–6 hrs",
       body: "Feed-in from the root so there's no knot pulling at your scalp. Straight ends or curly, any length you can sit for.",
-      price: "From ₦40,000",
+      price: "From $180",
       includes: [
         "Consultation and scalp check",
         "Wash and blow-dry before the install",
@@ -92,7 +94,7 @@ export const services = {
       title: "Cornrows & Feed-ins",
       duration: "2–4 hrs",
       body: "Straight-backs, side parts and patterned feed-ins with clean, even sections that hold their shape all week.",
-      price: "From ₦22,000",
+      price: "From $90",
       includes: [
         "Pattern drawn with you before we start",
         "Wash and blow-dry included",
@@ -108,7 +110,7 @@ export const services = {
       title: "Braided Updos",
       duration: "3–5 hrs",
       body: "Cornrowed sides gathered into a braided crown, finished with cowrie shells or cuffs if you want them.",
-      price: "From ₦45,000",
+      price: "From $200",
       includes: [
         "Style mapped to the occasion",
         "Cowrie shells, cuffs or beads included",
@@ -124,7 +126,7 @@ export const services = {
       title: "Passion Twists",
       duration: "4–6 hrs",
       body: "Soft, springy twists with plenty of movement — lighter on the scalp than braids and quicker to take down.",
-      price: "From ₦38,000",
+      price: "From $170",
       includes: [
         "Consultation and scalp check",
         "Water-wave hair provided",
@@ -140,7 +142,7 @@ export const services = {
       title: "Locs & Natural Styling",
       duration: "1–3 hrs",
       body: "Starter locs, retwists and interlocking, plus wash-and-style for anyone taking a break between installs.",
-      price: "From ₦18,000",
+      price: "From $75",
       includes: [
         "Retwist, interlock or starter install",
         "Clarifying wash and scalp treatment",
@@ -269,17 +271,17 @@ export const booking = {
   heading: "Reserve your chair.",
   body: "Tell us what you're after and we'll come back within a day with two or three times that work. New clients, add a note about your last install — it saves us both a step.",
   details: [
-    { label: "Studio", value: "14 Karimu Kotun St, Victoria Island" },
+    { label: "Studio", value: "2350 Eglinton Ave E, Scarborough, ON" },
     { label: "Hours", value: "Tue – Sat, 9:00 – 19:00" },
-    { label: "Phone", value: "+234 802 114 9077" },
+    { label: "WhatsApp", value: WHATSAPP_DISPLAY },
     { label: "Email", value: "hello@lumi.studio" },
   ],
   options: [
-    { name: "Knotless Braids", price: "From ₦40,000" },
-    { name: "Cornrows & Feed-ins", price: "From ₦22,000" },
-    { name: "Braided Updos", price: "From ₦45,000" },
-    { name: "Passion Twists", price: "From ₦38,000" },
-    { name: "Locs & Natural Styling", price: "From ₦18,000" },
+    { name: "Knotless Braids", price: "From $180" },
+    { name: "Cornrows & Feed-ins", price: "From $90" },
+    { name: "Braided Updos", price: "From $200" },
+    { name: "Passion Twists", price: "From $170" },
+    { name: "Locs & Natural Styling", price: "From $75" },
   ],
 };
 
@@ -288,7 +290,7 @@ export const reviews = {
   items: [
     {
       quote:
-        "Braids that didn't give me a headache on night one. That alone is worth the drive across the island.",
+        "Braids that didn't give me a headache on night one. That alone is worth the drive across the city.",
       name: "Simi A.",
       service: "Knotless braids",
     },
@@ -312,7 +314,7 @@ export const footer = {
   columns: [
     {
       title: "Visit",
-      items: ["14 Karimu Kotun St", "Victoria Island, Lagos", "Nigeria"],
+      items: ["2350 Eglinton Ave E", "Scarborough, ON M1K 2M2", "Canada"],
     },
     {
       title: "Hours",

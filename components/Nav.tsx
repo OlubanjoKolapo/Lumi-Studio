@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { nav } from "@/lib/content";
+import { WHATSAPP_DISPLAY, WHATSAPP_NUMBER } from "@/lib/whatsapp";
 import Magnetic from "./motion/Magnetic";
 import { EASE } from "./motion/Reveal";
 import { useLenis } from "./motion/SmoothScroll";
@@ -151,7 +152,14 @@ export default function Nav() {
               transition={{ duration: 0.6, delay: 0.5 }}
             >
               <p className="u-eyebrow text-bone/50">hello@lumi.studio</p>
-              <p className="u-eyebrow mt-3 text-bone/50">+234 802 114 9077</p>
+              <a
+                href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="u-link u-eyebrow mt-3 block text-bone/50"
+              >
+                {WHATSAPP_DISPLAY}
+              </a>
             </motion.div>
           </motion.div>
         )}

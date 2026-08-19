@@ -7,7 +7,7 @@ import { pageHeaders } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Contact — Lumi Studio",
   description:
-    "Request an appointment at Lumi Studio, Victoria Island, Lagos. Open Tuesday to Saturday — we reply within a day.",
+    "Request an appointment at Lumi Studio, Scarborough, Toronto. Pick a service and a day and it opens straight in WhatsApp. Open Tuesday to Saturday.",
 };
 
 export default function ContactPage() {
