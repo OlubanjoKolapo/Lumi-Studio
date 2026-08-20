@@ -26,7 +26,7 @@ export const pageHeaders = {
     index: "(03)",
     eyebrow: "Gallery",
     lines: ["Work from", "the chair."],
-    lede: "Every photo here is a real client at the end of a real appointment. No filters, no retouching, no stock. Filter by the style you're considering.",
+    lede: "Work straight from the chair, alongside reference shots for the styles we install most. Filter by what you're considering.",
     meta: ["Shot in-studio", "Updated weekly"],
   },
   contact: {
@@ -63,9 +63,9 @@ export const studio = {
     { value: "4.9", suffix: "/5", label: "From 380 reviews" },
     { value: "1", suffix: "at a time", label: "Never double-booked" },
   ],
-  caption: "Fig. 01 — Cornrow updo, finished",
-  image: "/images/updo-cowrie-side.jpg",
-  imagePos: "object-[50%_38%]",
+  caption: "Fig. 01 — Body wave install, finished",
+  image: "/images/sewin-bodywave-front.jpg",
+  imagePos: "object-[50%_28%]",
 };
 
 export const services = {
@@ -224,23 +224,31 @@ export const process = [
  */
 export const galleryAll = [
   { src: "/images/braids-waist-white.jpg", caption: "Knotless braids — waist", category: "Braids", pos: "object-[52%_42%]" },
-  { src: "/images/knotless-curly-top.jpg", caption: "Knotless with curled ends", category: "Braids", pos: "object-[50%_55%]" },
+  { src: "/images/braids-knotless-box-side.jpg", caption: "Knotless box braids — side", category: "Braids", pos: "object-[50%_35%]" },
   { src: "/images/twists-honey-night.jpg", caption: "Honey twists", category: "Twists", pos: "object-[50%_45%]" },
+  { src: "/images/cornrows-straightback-top.jpg", caption: "Straight-backs — top", category: "Cornrows", pos: "object-[50%_42%]" },
   { src: "/images/updo-cowrie-back.jpg", caption: "Braided updo — cowrie", category: "Updos", pos: "object-[50%_18%]" },
   { src: "/images/braids-medium-side.jpg", caption: "Medium knotless — shoulder", category: "Braids", pos: "object-[45%_45%]" },
+  { src: "/images/crochet-boho-side.jpg", caption: "Boho crochet — side", category: "Crochet", pos: "object-[50%_40%]" },
   { src: "/images/cornrows-feedin-top.jpg", caption: "Straight-back cornrows", category: "Cornrows", pos: "object-[50%_55%]" },
   { src: "/images/locs-long-back.jpg", caption: "Microlocs, retwisted", category: "Locs", pos: "object-[50%_40%]" },
+  { src: "/images/braids-knotless-box-top.jpg", caption: "Box braid partings", category: "Braids", pos: "object-[50%_42%]" },
   { src: "/images/twists-passion-pony.jpg", caption: "Passion twists, pulled up", category: "Twists", pos: "object-[45%_45%]" },
   { src: "/images/updo-cowrie-side.jpg", caption: "Cornrow updo — side", category: "Updos", pos: "object-[50%_38%]" },
+  { src: "/images/cornrows-straightback-back.jpg", caption: "Straight-backs — back", category: "Cornrows", pos: "object-[50%_45%]" },
   { src: "/images/braids-waist-warm.jpg", caption: "Waist-length knotless", category: "Braids", pos: "object-[50%_38%]" },
+  { src: "/images/knotless-curly-top.jpg", caption: "Knotless with curled ends", category: "Braids", pos: "object-[50%_55%]" },
+  { src: "/images/crochet-boho-back.jpg", caption: "Boho crochet — back", category: "Crochet", pos: "object-[50%_45%]" },
   { src: "/images/locs-starter-side.jpg", caption: "Starter locs", category: "Locs", pos: "object-[50%_40%]" },
+  { src: "/images/braids-knotless-box-back.jpg", caption: "Knotless box braids — back", category: "Braids", pos: "object-[50%_40%]" },
   { src: "/images/twists-passion-side.jpg", caption: "Passion twists — side", category: "Twists", pos: "object-[50%_45%]" },
+  { src: "/images/cornrows-straightback-side.jpg", caption: "Feed-in cornrows — side", category: "Cornrows", pos: "object-[50%_40%]" },
   { src: "/images/braids-knotless-back.jpg", caption: "Knotless, curled ends", category: "Braids", pos: "object-[50%_78%]" },
   { src: "/images/knotless-curly-overhead.jpg", caption: "Knotless — overhead", category: "Braids", pos: "object-[50%_55%]" },
   { src: "/images/braiding-in-progress.jpg", caption: "Mid-install", category: "Cornrows", pos: "object-[62%_50%]" },
 ];
 
-export const galleryFilters = ["All", "Braids", "Cornrows", "Twists", "Locs", "Updos"];
+export const galleryFilters = ["All", "Braids", "Cornrows", "Crochet", "Twists", "Locs", "Updos"];
 
 /** Contact-page questions, asked often enough to be worth answering up front. */
 export const faqs = [

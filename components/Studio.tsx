@@ -69,7 +69,7 @@ export default function Studio() {
           </Reveal>
           <RevealImage
             src={studio.image}
-            alt="Cornrow updo finished with cowrie shells, side profile"
+            alt="Client with a finished body wave install, photographed in the studio"
             className="aspect-[4/5] w-full u-zoom"
             imgClassName={studio.imagePos}
             parallax={26}
