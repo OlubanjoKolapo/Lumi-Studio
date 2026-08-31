@@ -166,7 +166,7 @@ export default function Nav() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              <p className="u-eyebrow text-bone/50">hello@yenissarbeauty.com</p>
+              <p className="u-eyebrow text-bone/50">nimetyyeni@gmail.com</p>
               <a
                 href={`https://wa.me/${WHATSAPP_NUMBER}`}
                 target="_blank"

@@ -335,7 +335,7 @@ export const booking = {
     { label: "Studio", value: "8 View St, Ajax, ON" },
     { label: "Hours", value: "Tue – Sat, 9:00 – 19:00" },
     { label: "WhatsApp", value: WHATSAPP_DISPLAY },
-    { label: "Email", value: "hello@yenissarbeauty.com" },
+    { label: "Email", value: "nimetyyeni@gmail.com" },
   ],
   options: [
     { name: "Knotless Big Long", price: "CAD 100" },
