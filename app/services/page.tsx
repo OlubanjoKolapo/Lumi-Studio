@@ -7,9 +7,9 @@ import ServiceDetail from "@/components/ServiceDetail";
 import { pageHeaders } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Services — Lumi Studio",
+  title: "Services — Yenissar Beauty Center",
   description:
-    "Knotless braids, cornrows and feed-ins, braided updos, passion twists and locs. What each one costs, how long it takes and what's included.",
+    "Knotless braids, cornrows, sew-in weaving, crochet, dreadlocks and sisterlocks. Transparent CAD pricing, durations and service inclusions.",
 };
 
 export default function ServicesPage() {

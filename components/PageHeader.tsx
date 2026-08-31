@@ -23,7 +23,7 @@ export default function PageHeader({ index, eyebrow, lines, lede, meta }: Props)
         <span className="u-eyebrow text-mocha">
           {index} — {eyebrow}
         </span>
-        <span className="u-eyebrow hidden text-mocha/60 sm:inline">Lumi Studio</span>
+        <span className="u-eyebrow hidden text-mocha/60 sm:inline">Yenissar Beauty Center</span>
       </Reveal>
 
       <div className="mt-12 grid grid-cols-12 gap-y-10 md:mt-16 md:gap-x-10">

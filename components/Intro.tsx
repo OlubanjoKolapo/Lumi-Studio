@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { EASE } from "./motion/Reveal";
@@ -43,15 +44,27 @@ export default function Intro() {
           exit={{ y: "-100%" }}
           transition={{ duration: 1.05, ease: EASE }}
         >
-          <motion.span
-            className="u-display text-[13vw] leading-none text-ink md:text-[8vw]"
+          <motion.div
+            className="flex flex-col items-center gap-3"
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -14, transition: { duration: 0.5, ease: EASE } }}
             transition={{ duration: 0.9, ease: EASE }}
           >
-            Lumi
-          </motion.span>
+            <div className="relative h-16 w-16 md:h-24 md:w-24">
+              <Image
+                src="/logo.png"
+                alt="Yenissar Beauty Center Logo"
+                fill
+                sizes="96px"
+                className="object-contain"
+                priority
+              />
+            </div>
+            <span className="u-display text-[7vw] leading-none text-ink md:text-[4vw]">
+              Yenissar
+            </span>
+          </motion.div>
           <motion.span
             className="absolute bottom-10 left-1/2 h-px -translate-x-1/2 bg-ink/25"
             initial={{ width: 0 }}

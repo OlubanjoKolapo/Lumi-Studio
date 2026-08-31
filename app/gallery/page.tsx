@@ -5,9 +5,9 @@ import SectionLink from "@/components/SectionLink";
 import { pageHeaders } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Gallery — Lumi Studio",
+  title: "Gallery — Yenissar Beauty Center",
   description:
-    "Real client work photographed at the end of the appointment — braids, cornrows, twists, locs and braided updos.",
+    "Real client work photographed at the end of the appointment — braids, cornrows, twists, locs, weaving and updos.",
 };
 
 export default function GalleryPage() {

@@ -13,7 +13,7 @@ export default function Services({ children }: { children?: ReactNode }) {
     <section id="services" className="bg-sand px-[var(--gutter)] py-24 md:py-36">
       <Reveal className="u-rule flex items-baseline justify-between pt-6">
         <span className="u-eyebrow text-mocha">(02) — {services.eyebrow}</span>
-        <span className="u-eyebrow hidden text-mocha/60 sm:inline">Five, no more</span>
+        <span className="u-eyebrow hidden text-mocha/60 sm:inline">Nine signature styles</span>
       </Reveal>
 
       <div className="mt-14 grid grid-cols-12 gap-y-8 md:mt-20 md:gap-x-10">

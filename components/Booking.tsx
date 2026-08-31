@@ -44,6 +44,7 @@ export default function Booking({
       price: booking.options[selected].price,
       day: day?.long,
       name: String(data.get("name") ?? ""),
+      materials: String(data.get("materials") ?? ""),
       note: String(data.get("note") ?? ""),
     });
 
@@ -225,12 +226,20 @@ export default function Booking({
                   <Field label="Your name" name="name" placeholder="Ada Nwosu" />
                 </Reveal>
 
+                <Reveal className="mt-10" delay={0.14}>
+                  <Field
+                    label="Materials needed or bringing (hair, weaves, etc.)"
+                    name="materials"
+                    placeholder="e.g. Bringing 3 packs Expression 24-inch or need hair provided"
+                  />
+                </Reveal>
+
                 <Reveal className="mt-10 flex flex-col gap-6 sm:flex-row sm:items-end" delay={0.16}>
                   <div className="flex-1">
                     <Field
-                      label="Anything we should know?"
+                      label="Anything else we should know?"
                       name="note"
-                      placeholder="Last relaxed in March, mostly wearing it up"
+                      placeholder="Last relaxed in March, sensitive scalp"
                     />
                   </div>
                   <Magnetic strength={0.18}>

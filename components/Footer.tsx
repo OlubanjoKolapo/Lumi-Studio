@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { footer, nav } from "@/lib/content";
 import Magnetic from "./motion/Magnetic";
@@ -17,12 +18,21 @@ export default function Footer() {
     <footer className="bg-bone px-[var(--gutter)] pb-10 pt-24 md:pt-32">
       <div className="grid grid-cols-12 gap-y-14 md:gap-x-10">
         <div className="col-span-12 md:col-span-5">
-          <Reveal>
-            <p className="u-display text-[clamp(3rem,7vw,6rem)] leading-none tracking-[0.06em] text-ink">
-              LUMI
+          <Reveal className="flex items-center gap-4">
+            <div className="relative h-12 w-12 shrink-0">
+              <Image
+                src="/logo.png"
+                alt="Yenissar Beauty Center Logo"
+                fill
+                sizes="48px"
+                className="object-contain"
+              />
+            </div>
+            <p className="u-display text-[clamp(2.2rem,5vw,4.5rem)] leading-none tracking-[0.04em] text-ink">
+              YENISSAR
             </p>
-            <p className="u-body mt-5 max-w-[20rem]">{footer.tagline}</p>
           </Reveal>
+          <p className="u-body mt-5 max-w-[20rem]">{footer.tagline}</p>
 
           <Reveal delay={0.15} className="mt-12 flex flex-wrap gap-x-8 gap-y-3">
             {nav.map((item) => (
@@ -69,19 +79,19 @@ export default function Footer() {
         viewport={{ once: true, margin: "-5% 0px" }}
       >
         <motion.p
-          className="u-display select-none text-center text-[19vw] leading-[0.78] tracking-[0.02em] text-ink/[0.07]"
+          className="u-display select-none text-center text-[12vw] leading-[0.78] tracking-[0.02em] text-ink/[0.07]"
           variants={{
             hidden: { y: "26%", opacity: 0 },
             show: { y: "0%", opacity: 1, transition: { duration: 1.4, ease: EASE } },
           }}
         >
-          Lumi Studio
+          Yenissar Beauty Center
         </motion.p>
       </motion.div>
 
       <div className="u-rule mt-8 flex flex-col items-start gap-5 pt-6 sm:flex-row sm:items-center sm:justify-between">
         <span className="u-eyebrow text-mocha/60">
-          © {new Date().getFullYear()} Lumi Studio — All rights reserved
+          © {new Date().getFullYear()} Yenissar Beauty Center — All rights reserved
         </span>
         <Magnetic strength={0.25}>
           <button

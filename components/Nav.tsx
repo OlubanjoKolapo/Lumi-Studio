@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion, useMotionValueEvent, useScroll } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -60,14 +61,28 @@ export default function Nav() {
         />
 
         <div
-          className={`relative flex items-center justify-between px-[var(--gutter)] py-6 transition-colors duration-500 ${tone}`}
+          className={`relative flex items-center justify-between px-[var(--gutter)] py-5 transition-colors duration-500 ${tone}`}
         >
           <Link
             href="/"
-            className="u-display text-2xl leading-none tracking-[0.14em]"
-            aria-label="Lumi — home"
+            className="flex items-center gap-3 group"
+            aria-label="Yenissar Beauty Center — home"
           >
-            LUMI
+            <div className="relative h-9 w-9 shrink-0 overflow-hidden">
+              <Image
+                src="/logo.png"
+                alt="Yenissar Beauty Center Logo"
+                fill
+                sizes="36px"
+                className={`object-contain transition-all duration-500 ${
+                  solid ? "filter-none" : "brightness-0 invert"
+                }`}
+                priority
+              />
+            </div>
+            <span className="u-display text-xl md:text-2xl leading-none tracking-[0.08em]">
+              YENISSAR
+            </span>
           </Link>
 
           <nav className="hidden items-center gap-10 md:flex">
@@ -151,7 +166,7 @@ export default function Nav() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              <p className="u-eyebrow text-bone/50">hello@lumi.studio</p>
+              <p className="u-eyebrow text-bone/50">hello@yenissarbeauty.com</p>
               <a
                 href={`https://wa.me/${WHATSAPP_NUMBER}`}
                 target="_blank"

@@ -1,4 +1,4 @@
-# Lumi Studio
+# Yenissar Beauty Center
 
 Marketing site for a fictional two-chair hair and beauty studio, built from a Figma
 comp. Next.js App Router, Tailwind v4, Framer Motion, Lenis.

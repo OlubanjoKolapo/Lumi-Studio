@@ -23,9 +23,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Lumi — Healthy Hair. Beautiful Confidence.",
+  title: "Yenissar Beauty Center — Healthy Hair. Beautiful Confidence.",
   description:
-    "A braiding and protective-styling studio in Ajax, Ontario. Knotless braids, cornrows, braided updos, passion twists and locs — book in a WhatsApp message.",
+    "Yenissar Beauty Center in Ajax, Ontario. Knotless braids, cornrows, sew-in weaving, crochet, dreadlocks and sisterlocks with transparent CAD pricing.",
 };
 
 export default function RootLayout({

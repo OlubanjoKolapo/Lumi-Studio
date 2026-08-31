@@ -61,6 +61,7 @@ export type BookingRequest = {
   price?: string;
   day?: string;
   name?: string;
+  materials?: string;
   note?: string;
 };
 
@@ -68,17 +69,17 @@ export type BookingRequest = {
  * Builds the wa.me deep link. Works on desktop web, iOS and Android — WhatsApp
  * picks up `text` as the prefilled draft, which the client still has to send.
  */
-export function buildWhatsAppUrl({ service, price, day, name, note }: BookingRequest) {
+export function buildWhatsAppUrl({ service, price, day, name, materials, note }: BookingRequest) {
   const lines = [
     day
-      ? `Hello Lumi Studio! I'd like to book a slot for ${day}.`
-      : "Hello Lumi Studio! I'd like to book a slot.",
+      ? `Hello Yenissar Beauty Center! I'd like to book a slot for ${day}.`
+      : "Hello Yenissar Beauty Center! I'd like to book a slot.",
     "",
     `Service: ${service}${price ? ` (${price})` : ""}`,
   ];
 
-  // The day is already in the greeting — repeating it as a field reads robotic.
   if (name?.trim()) lines.push(`Name: ${name.trim()}`);
+  if (materials?.trim()) lines.push(`Materials (hair/weaves): ${materials.trim()}`);
   if (note?.trim()) lines.push(`Note: ${note.trim()}`);
 
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
