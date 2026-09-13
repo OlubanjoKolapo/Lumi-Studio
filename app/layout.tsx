@@ -25,7 +25,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Yenissar Beauty Center — Healthy Hair. Beautiful Confidence.",
   description:
-    "Yenissar Beauty Center in Ajax, Ontario. Knotless braids, cornrows, sew-in weaving, crochet, dreadlocks and sisterlocks with transparent CAD pricing.",
+    "Yenissar Beauty Center in Canada. Knotless braids, cornrows, sew-in weaving, crochet, dreadlocks and sisterlocks with transparent CAD pricing.",
 };
 
 export default function RootLayout({

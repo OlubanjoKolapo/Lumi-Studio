@@ -46,7 +46,7 @@ export const hero = {
     { text: "Confidence." },
   ],
   body: "Braids, twists, weaves and locs installed with tension your edges can live with — and a scalp that still feels like yours in week six.",
-  meta: ["Est. 2014", "Ajax · Ontario"],
+  meta: ["Est. 2014", "Canada"],
   image: "/images/braids-waist-warm.jpg",
 };
 
@@ -332,7 +332,7 @@ export const booking = {
   heading: "Reserve your chair.",
   body: "Select your desired service, pick an available day, and let us know if you're bringing materials (hair, weaves, extensions) or need them provided.",
   details: [
-    { label: "Studio", value: "Ajax, ON — address shared on booking" },
+    { label: "Studio", value: "Canada — address shared on booking" },
     { label: "Hours", value: "Tue – Sat, 9:00 – 19:00" },
     { label: "WhatsApp", value: WHATSAPP_DISPLAY },
     { label: "Email", value: "nimetyyeni@gmail.com" },
@@ -379,7 +379,7 @@ export const footer = {
   columns: [
     {
       title: "Visit",
-      items: ["Ajax, ON", "Canada"],
+      items: ["Canada"],
     },
     {
       title: "Hours",
