@@ -332,7 +332,7 @@ export const booking = {
   heading: "Reserve your chair.",
   body: "Select your desired service, pick an available day, and let us know if you're bringing materials (hair, weaves, extensions) or need them provided.",
   details: [
-    { label: "Studio", value: "8 View St, Ajax, ON" },
+    { label: "Studio", value: "Ajax, ON — address shared on booking" },
     { label: "Hours", value: "Tue – Sat, 9:00 – 19:00" },
     { label: "WhatsApp", value: WHATSAPP_DISPLAY },
     { label: "Email", value: "nimetyyeni@gmail.com" },
@@ -379,7 +379,7 @@ export const footer = {
   columns: [
     {
       title: "Visit",
-      items: ["8 View St", "Ajax, ON", "Canada"],
+      items: ["Ajax, ON", "Canada"],
     },
     {
       title: "Hours",
